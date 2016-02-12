@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DEB691E-82B5-4815-BDA8-0D3F990A21F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TanchikiWin32ConsoleApplication</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Desktop\TanchikiDIY\SDL2_image-2.0.0-vc\include;E:\Desktop\TanchikiDIY\SDL2_ttf-2.0.12-vc\include;E:\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Desktop\TanchikiDIY\SDL2_image-2.0.0-vc\lib\x86;E:\Desktop\TanchikiDIY\SDL2_ttf-2.0.12-vc\lib\x86;E:\Desktop\TanchikiDIY\SDL2-2.0.3-vc\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\begin_code.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\close_code.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_assert.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_atomic.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_audio.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_bits.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_blendmode.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_clipboard.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_config.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_cpuinfo.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_endian.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_error.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_events.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_filesystem.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_gamecontroller.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_gesture.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_haptic.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_hints.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_joystick.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_keyboard.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_keycode.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_loadso.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_log.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_main.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_messagebox.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_mouse.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_mutex.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_name.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_opengl.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_opengles.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_opengles2.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_pixels.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_platform.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_power.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_quit.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_rect.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_render.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_revision.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_rwops.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_scancode.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_shape.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_stdinc.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_surface.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_system.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_syswm.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_assert.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_common.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_compare.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_crc32.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_font.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_harness.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_images.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_log.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_md5.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_test_random.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_thread.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_timer.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_touch.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_types.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_version.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\include\SDL_video.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2_image-2.0.0-vc\include\SDL_image.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2_ttf-2.0.12-vc\include\SDL_ttf.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\direction.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\explosion_sprite.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\input.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\missile.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\tank.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\tank_color.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\targetver.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\explosion_sprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\input.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\missile.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\stdafx.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\tank.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\ExplosionSprite.png" />
+    <Image Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\MulticolorTanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\SDL.props" />
+    <None Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\SDL_Image.props" />
+    <None Include="..\..\..\..\..\Desktop\TanchikiDIY\Tanchiki\SDL_TTF.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\lib\x86\SDL2.lib" />
+    <Library Include="..\..\..\..\..\Desktop\TanchikiDIY\SDL2-2.0.3-vc\lib\x86\SDL2main.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
